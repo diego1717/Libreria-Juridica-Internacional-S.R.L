@@ -3,420 +3,331 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Libreria Juridica Internacional: catalogo editorial para derecho internacional, compliance, litigacion y consulta academica.">
-  <meta name="theme-color" content="#182a45">
+  <meta name="description" content="Libreria Juridica Internacional: tienda y catalogo editorial para derecho internacional, corporativo, procesal, penal y tributario.">
+  <meta name="theme-color" content="#9f1f35">
   <title>Libreria Juridica Internacional</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./main.js" defer></script>
+  <script type="module" src="./main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
+  <div class="utility-bar">
+    <div class="shell utility-bar-inner">
+      <p>Catalogo juridico, importados y pedidos institucionales.</p>
+      <div class="utility-links">
+        <span>Atencion comercial prioritaria</span>
+        <span>Envios y reservas por encargo</span>
+      </div>
+    </div>
+  </div>
+
   <header class="site-header">
-    <div class="shell site-header-inner">
+    <div class="shell header-main">
       <a class="brand" href="#inicio" aria-label="Ir al inicio de Libreria Juridica Internacional">
         <span class="brand-mark" aria-hidden="true">LJ</span>
         <span class="brand-copy">
           <strong>Libreria Juridica Internacional</strong>
-          <span>Catalogo profesional y editorial</span>
+          <span>Tienda editorial y catalogo de derecho</span>
         </span>
       </a>
 
+      <form class="search-bar" data-search-form>
+        <label class="visually-hidden" for="catalog-search">Buscar en el catalogo</label>
+        <input id="catalog-search" name="search" type="search" placeholder="Buscar por titulo, autor, editorial o materia" data-search-input>
+        <button type="submit">Buscar</button>
+      </form>
+
+      <a class="order-link" href="#pedido">
+        Mi pedido
+        <span class="order-link-count" data-order-badge>0</span>
+      </a>
+    </div>
+
+    <div class="shell header-nav-row">
       <nav class="site-nav" aria-label="Navegacion principal">
         <a href="#inicio">Inicio</a>
-        <a href="#colecciones">Colecciones</a>
         <a href="#catalogo">Catalogo</a>
+        <a href="#escaparates">Escaparates</a>
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
       </nav>
-
-      <a class="header-link" href="#pedido">Armar pedido</a>
     </div>
   </header>
 
   <main id="main-content">
     <section class="hero section-anchor" id="inicio">
-      <div class="shell hero-grid">
+      <div class="shell hero-layout">
         <div class="hero-copy">
-          <p class="eyebrow">Libreria juridica y venta especializada de libros</p>
-          <h1>Una presencia digital sobria, confiable y hecha para vender criterio editorial.</h1>
+          <p class="eyebrow">Libreria juridica internacional</p>
+          <h1>Un catalogo rojo, serio y comercial para vender libros juridicos de verdad.</h1>
           <p class="hero-text">
-            Esta propuesta combina una identidad juridica de alta confianza con una puesta en escena editorial: catalogo filtrable,
-            pedido rapido y una narrativa visual pensada para despachos, universidades, docentes y equipos de cumplimiento.
+            La propuesta toma la logica de una libreria especializada: cabecera utilitaria, area real de tienda,
+            catalogo filtrable, escaparates tematicos y un pedido rapido que no inventa un checkout falso.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#catalogo">Explorar catalogo</a>
-            <a class="button button-secondary" href="#servicios">Ver servicios</a>
+            <a class="button button-primary" href="#catalogo">Entrar al catalogo</a>
+            <a class="button button-secondary" href="#escaparates">Ver escaparates</a>
           </div>
 
-          <ul class="hero-points" aria-label="Puntos destacados">
-            <li>Curaduria para derecho internacional, corporativo, procesal y tributario.</li>
-            <li>Espacio listo para reservas, consultas y pedidos institucionales.</li>
-            <li>Base visual preparada para crecer hacia ecommerce real cuando lo necesites.</li>
-          </ul>
+          <div class="hero-metrics" aria-label="Indicadores principales">
+            <article>
+              <strong>6</strong>
+              <span>materias destacadas</span>
+            </article>
+            <article>
+              <strong>12</strong>
+              <span>titulos de muestra</span>
+            </article>
+            <article>
+              <strong>1</strong>
+              <span>panel de pedido listo</span>
+            </article>
+          </div>
         </div>
 
-        <div class="hero-panel" aria-label="Resumen editorial">
-          <article class="hero-panel-lead">
-            <p class="panel-label">Coleccion destacada</p>
-            <h2>Derecho internacional, arbitraje y comercio global.</h2>
+        <div class="hero-feature">
+          <article class="hero-feature-card hero-feature-card-main">
+            <p class="hero-feature-label">Novedad juridica</p>
+            <h2>Proceso, prueba, empresa, compliance y derecho internacional en una sola vitrina.</h2>
             <p>
-              Un frente visual que mezcla autoridad, legibilidad y una atmosfera de biblioteca contemporanea para vender obras de consulta,
-              novedades importadas y pedidos por encargo.
+              El tono visual se mueve entre el rojo institucional del logo, papel editorial y una composicion clara
+              para que el sitio se sienta libreria antes que landing generica.
             </p>
           </article>
 
-          <div class="hero-panel-grid">
+          <div class="hero-feature-grid">
             <article>
-              <p class="panel-label">Perfil comercial</p>
-              <strong>Venta unitaria y pedidos por lote</strong>
-              <span>Ideal para bibliotecas, estudios y equipos academicos.</span>
+              <span>Catalogo</span>
+              <strong>Busqueda, filtros y orden</strong>
             </article>
             <article>
-              <p class="panel-label">Lenguaje visual</p>
-              <strong>Navy, dorado y papel calido</strong>
-              <span>Formal sin verse rigido ni antiguo.</span>
+              <span>Tienda</span>
+              <strong>Precios, editoriales y seleccion</strong>
             </article>
-          </div>
-
-          <div class="hero-shelf" aria-hidden="true">
-            <span class="spine spine-a">Intl.</span>
-            <span class="spine spine-b">Civil</span>
-            <span class="spine spine-c">Corp.</span>
-            <span class="spine spine-d">Tax</span>
-            <span class="spine spine-e">Proc.</span>
-            <span class="spine spine-f">Comp.</span>
+            <article>
+              <span>Marca</span>
+              <strong>Rojo juridico, no azul bancario</strong>
+            </article>
+            <article>
+              <span>Operacion</span>
+              <strong>Reservas, lotes y compra institucional</strong>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="trust-strip">
-      <div class="shell trust-strip-grid">
-        <div>
-          <span class="trust-title">Seleccion especializada</span>
-          <p>Catalogo pensado para consulta profesional y formacion juridica.</p>
-        </div>
-        <div>
-          <span class="trust-title">Pedido asistido</span>
-          <p>La interfaz prioriza solicitudes claras y rapidas sin friccion innecesaria.</p>
-        </div>
-        <div>
-          <span class="trust-title">Escala internacional</span>
-          <p>La narrativa visual deja espacio para importados, novedades y obras bilingues.</p>
-        </div>
+    <section class="store-rail">
+      <div class="shell store-rail-grid">
+        <button type="button" class="store-pill is-active" data-filter="all" aria-pressed="true">Todo el catalogo</button>
+        <button type="button" class="store-pill" data-filter="internacional" aria-pressed="false">Derecho internacional</button>
+        <button type="button" class="store-pill" data-filter="corporativo" aria-pressed="false">Corporativo y compliance</button>
+        <button type="button" class="store-pill" data-filter="procesal" aria-pressed="false">Procesal y litigacion</button>
+        <button type="button" class="store-pill" data-filter="tributario" aria-pressed="false">Tributario</button>
+        <button type="button" class="store-pill" data-filter="penal" aria-pressed="false">Penal</button>
       </div>
     </section>
 
-    <section class="section section-anchor" id="colecciones">
+    <section class="shop-section section-anchor" id="catalogo">
       <div class="shell">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Colecciones</p>
-            <h2>Una estructura editorial para vender libros juridicos sin caer en una tienda generica.</h2>
+            <p class="eyebrow">Tienda y catalogo</p>
+            <h2>Una zona comercial inspirada en librerias especializadas, no en un catalogo plano.</h2>
           </div>
           <p class="section-intro">
-            La home separa el catalogo por frentes de compra reales: consulta academica, trabajo de despacho, actualizacion normativa y obras de referencia.
+            El catalogo prioriza descubrimiento, comparacion y seleccion. La experiencia esta pensada para mostrar editoriales,
+            materias, estado comercial y una lista de pedido facil de exportar.
           </p>
         </div>
 
-        <div class="collection-grid">
-          <article class="collection-card">
-            <p class="collection-index">01</p>
-            <h3>Derecho internacional</h3>
-            <p>Tratados, jurisdiccion transfronteriza, arbitraje, comercio internacional y cooperacion juridica.</p>
-          </article>
-          <article class="collection-card">
-            <p class="collection-index">02</p>
-            <h3>Corporativo y compliance</h3>
-            <p>Gobierno corporativo, regulacion sectorial, gestion de riesgo y manuales de cumplimiento.</p>
-          </article>
-          <article class="collection-card">
-            <p class="collection-index">03</p>
-            <h3>Litigacion y proceso</h3>
-            <p>Estrategia procesal, prueba, audiencias, argumentacion y tecnica forense aplicada.</p>
-          </article>
-          <article class="collection-card">
-            <p class="collection-index">04</p>
-            <h3>Tributario y regulatorio</h3>
-            <p>Fiscalidad comparada, planeamiento, riesgo normativo y actualizacion permanente.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-anchor catalog-section" id="catalogo">
-      <div class="shell">
-        <div class="section-heading section-heading-tight">
-          <div>
-            <p class="eyebrow">Catalogo</p>
-            <h2>Libros destacados con filtro rapido y seleccion para consulta.</h2>
-          </div>
-
-          <div class="filter-bar" role="toolbar" aria-label="Filtrar catalogo">
-            <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">Todo</button>
-            <button type="button" class="filter-chip" data-filter="internacional" aria-pressed="false">Internacional</button>
-            <button type="button" class="filter-chip" data-filter="corporativo" aria-pressed="false">Corporativo</button>
-            <button type="button" class="filter-chip" data-filter="procesal" aria-pressed="false">Procesal</button>
-            <button type="button" class="filter-chip" data-filter="tributario" aria-pressed="false">Tributario</button>
-          </div>
-        </div>
-
-        <div class="catalog-layout">
-          <div class="book-grid">
-            <article class="book-card" data-category="internacional" data-title="Tratados y jurisdiccion transfronteriza" data-edition="Coleccion internacional">
-              <p class="book-meta">Coleccion internacional <span>ES / EN</span></p>
-              <h3>Tratados y jurisdiccion transfronteriza</h3>
-              <p>Obra de referencia para conflictos de leyes, competencia judicial y coordinacion entre sistemas.</p>
-              <ul class="book-tags">
-                <li>Referencia</li>
-                <li>Bilingue</li>
-                <li>Consulta</li>
-              </ul>
-              <div class="book-footer">
-                <span class="book-status">Agregar a consulta</span>
-                <button type="button" class="book-action" data-add-book>Seleccionar</button>
+        <div class="shop-layout">
+          <aside class="shop-sidebar">
+            <section class="sidebar-card">
+              <p class="eyebrow">Materias</p>
+              <div class="sidebar-filter-list">
+                <button type="button" class="sidebar-filter is-active" data-filter="all" aria-pressed="true">Todo el catalogo</button>
+                <button type="button" class="sidebar-filter" data-filter="internacional" aria-pressed="false">Derecho internacional</button>
+                <button type="button" class="sidebar-filter" data-filter="corporativo" aria-pressed="false">Derecho mercantil y compliance</button>
+                <button type="button" class="sidebar-filter" data-filter="procesal" aria-pressed="false">Derecho procesal</button>
+                <button type="button" class="sidebar-filter" data-filter="tributario" aria-pressed="false">Derecho tributario</button>
+                <button type="button" class="sidebar-filter" data-filter="penal" aria-pressed="false">Derecho penal</button>
               </div>
-            </article>
+            </section>
 
-            <article class="book-card" data-category="internacional" data-title="Arbitraje comercial y resolucion de controversias" data-edition="Serie arbitraje">
-              <p class="book-meta">Serie arbitraje <span>Importado</span></p>
-              <h3>Arbitraje comercial y resolucion de controversias</h3>
-              <p>Una propuesta pensada para firmas, camaras arbitrales y especialistas en operaciones complejas.</p>
-              <ul class="book-tags">
-                <li>Arbitraje</li>
-                <li>Empresa</li>
-                <li>Global</li>
+            <section class="sidebar-card">
+              <p class="eyebrow">Compra especializada</p>
+              <ul class="sidebar-list">
+                <li>Novedades juridicas y fondos permanentes.</li>
+                <li>Pedidos por lote para estudios y universidades.</li>
+                <li>Obras importadas y reservas por encargo.</li>
+                <li>Curaduria por materia y perfil profesional.</li>
               </ul>
-              <div class="book-footer">
-                <span class="book-status">Agregar a consulta</span>
-                <button type="button" class="book-action" data-add-book>Seleccionar</button>
-              </div>
-            </article>
+            </section>
 
-            <article class="book-card" data-category="corporativo" data-title="Gobierno corporativo para mercados regulados" data-edition="Edicion comentada">
-              <p class="book-meta">Edicion comentada <span>Corporativo</span></p>
-              <h3>Gobierno corporativo para mercados regulados</h3>
-              <p>Texto orientado a directorios, asesoria societaria, compliance y regulacion para empresas en expansion.</p>
-              <ul class="book-tags">
-                <li>Board</li>
-                <li>Compliance</li>
-                <li>Mercados</li>
-              </ul>
-              <div class="book-footer">
-                <span class="book-status">Agregar a consulta</span>
-                <button type="button" class="book-action" data-add-book>Seleccionar</button>
-              </div>
-            </article>
+            <section class="sidebar-card sidebar-card-accent">
+              <p class="eyebrow">Atencion institucional</p>
+              <h3>Prepara pedidos para despachos, bibliotecas y equipos docentes.</h3>
+              <p>
+                La interfaz queda lista para sumar despues precios finales, stock real, cuentas de cliente y checkout.
+              </p>
+              <a class="button button-primary" href="#contacto">Solicitar siguiente etapa</a>
+            </section>
+          </aside>
 
-            <article class="book-card" data-category="corporativo" data-title="Manual estrategico de compliance comparado" data-edition="Coleccion regulatoria">
-              <p class="book-meta">Coleccion regulatoria <span>Actualizacion</span></p>
-              <h3>Manual estrategico de compliance comparado</h3>
-              <p>Enfoque practico para matrices de riesgo, controles internos y cumplimiento en entornos multicapa.</p>
-              <ul class="book-tags">
-                <li>Riesgo</li>
-                <li>Controles</li>
-                <li>Gestion</li>
-              </ul>
-              <div class="book-footer">
-                <span class="book-status">Agregar a consulta</span>
-                <button type="button" class="book-action" data-add-book>Seleccionar</button>
-              </div>
-            </article>
-
-            <article class="book-card" data-category="procesal" data-title="Litigacion civil y construccion del caso" data-edition="Practica procesal">
-              <p class="book-meta">Practica procesal <span>Despachos</span></p>
-              <h3>Litigacion civil y construccion del caso</h3>
-              <p>Material orientado a estrategia probatoria, narrativa forense y preparacion integral del expediente.</p>
-              <ul class="book-tags">
-                <li>Audiencia</li>
-                <li>Forense</li>
-                <li>Estrategia</li>
-              </ul>
-              <div class="book-footer">
-                <span class="book-status">Agregar a consulta</span>
-                <button type="button" class="book-action" data-add-book>Seleccionar</button>
-              </div>
-            </article>
-
-            <article class="book-card" data-category="procesal" data-title="Prueba documental y oral en audiencias" data-edition="Linea litigacion">
-              <p class="book-meta">Linea litigacion <span>Capacitacion</span></p>
-              <h3>Prueba documental y oral en audiencias</h3>
-              <p>Ideal para equipos litigantes que necesitan una pieza clara, aplicada y lista para consulta intensiva.</p>
-              <ul class="book-tags">
-                <li>Prueba</li>
-                <li>Audiencias</li>
-                <li>Practico</li>
-              </ul>
-              <div class="book-footer">
-                <span class="book-status">Agregar a consulta</span>
-                <button type="button" class="book-action" data-add-book>Seleccionar</button>
-              </div>
-            </article>
-
-            <article class="book-card" data-category="tributario" data-title="Fiscalidad internacional para empresas en expansion" data-edition="Tributario global">
-              <p class="book-meta">Tributario global <span>Analisis comparado</span></p>
-              <h3>Fiscalidad internacional para empresas en expansion</h3>
-              <p>Mapa claro para operaciones regionales, estructuras corporativas y obligaciones fiscales multilocales.</p>
-              <ul class="book-tags">
-                <li>Impuestos</li>
-                <li>Expansion</li>
-                <li>Comparado</li>
-              </ul>
-              <div class="book-footer">
-                <span class="book-status">Agregar a consulta</span>
-                <button type="button" class="book-action" data-add-book>Seleccionar</button>
-              </div>
-            </article>
-
-            <article class="book-card" data-category="tributario" data-title="Planeamiento tributario y riesgo regulatorio" data-edition="Coleccion fiscal">
-              <p class="book-meta">Coleccion fiscal <span>Uso profesional</span></p>
-              <h3>Planeamiento tributario y riesgo regulatorio</h3>
-              <p>Una ficha pensada para firmas y empresas que trabajan con reorganizacion, control y prevencion.</p>
-              <ul class="book-tags">
-                <li>Fiscal</li>
-                <li>Riesgo</li>
-                <li>Normativa</li>
-              </ul>
-              <div class="book-footer">
-                <span class="book-status">Agregar a consulta</span>
-                <button type="button" class="book-action" data-add-book>Seleccionar</button>
-              </div>
-            </article>
-          </div>
-
-          <aside class="inquiry-panel section-anchor" id="pedido">
-            <p class="eyebrow eyebrow-light">Pedido rapido</p>
-            <h2>Selecciona titulos y genera un pedido base.</h2>
-            <p class="inquiry-text">
-              Esta demo no fuerza un checkout falso. En cambio, consolida una lista seria que luego puede conectarse a correo,
-              WhatsApp o ecommerce real.
-            </p>
-
-            <div class="inquiry-summary">
-              <span data-selected-count>0</span>
-              <span>titulos seleccionados</span>
+          <div class="shop-main">
+            <div class="shop-toolbar">
+              <p class="results-copy"><strong data-results-count>0</strong> titulos visibles</p>
+              <label class="sort-control" for="catalog-sort">
+                Ordenar
+                <select id="catalog-sort" data-sort-select>
+                  <option value="featured">Destacados</option>
+                  <option value="price-asc">Precio menor a mayor</option>
+                  <option value="price-desc">Precio mayor a menor</option>
+                  <option value="newest">Mas recientes</option>
+                </select>
+              </label>
             </div>
 
-            <ul class="inquiry-list" data-inquiry-list>
-              <li class="inquiry-empty">Todavia no agregaste libros al pedido.</li>
+            <div class="book-grid" data-book-grid></div>
+            <div class="no-results" data-no-results hidden>
+              <h3>No encontramos titulos con ese criterio.</h3>
+              <p>Prueba otra busqueda o vuelve a "Todo el catalogo".</p>
+            </div>
+          </div>
+
+          <aside class="cart-panel section-anchor" id="pedido">
+            <p class="eyebrow eyebrow-light">Pedido rapido</p>
+            <h2>Tu seleccion comercial.</h2>
+            <p class="cart-copy">
+              Este panel funciona como una pre-cotizacion editable. Sirve para correo, WhatsApp o gestion interna.
+            </p>
+
+            <div class="cart-stats">
+              <div>
+                <span class="cart-stat-label">Titulos</span>
+                <strong data-selected-count>0</strong>
+              </div>
+              <div>
+                <span class="cart-stat-label">Total ref.</span>
+                <strong data-selected-total>0,00 US$</strong>
+              </div>
+            </div>
+
+            <ul class="selected-list" data-selected-list>
+              <li class="selected-empty">Aun no agregaste libros al pedido.</li>
             </ul>
 
-            <div class="inquiry-actions">
-              <button type="button" class="button button-primary button-dark" data-copy-order disabled>Copiar pedido base</button>
-              <button type="button" class="button button-secondary button-dark" data-clear-order disabled>Limpiar lista</button>
+            <div class="cart-actions">
+              <button type="button" class="button button-primary button-cart" data-copy-order disabled>Copiar pedido</button>
+              <button type="button" class="button button-secondary button-cart" data-clear-order disabled>Limpiar</button>
             </div>
 
             <p class="copy-feedback" data-copy-feedback role="status" aria-live="polite"></p>
-
-            <div class="inquiry-notes">
-              <div>
-                <span>Uso ideal</span>
-                <strong>Reservas, consulta de stock y pedidos institucionales</strong>
-              </div>
-              <div>
-                <span>Integracion siguiente</span>
-                <strong>Correo oficial, carrito, precios y checkout</strong>
-              </div>
-            </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="section section-anchor" id="servicios">
+    <section class="showcase-section section-anchor" id="escaparates">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Escaparates tematicos</p>
+            <h2>Areas pensadas para vender por interes, no solo por materia.</h2>
+          </div>
+          <p class="section-intro">
+            Igual que una libreria especializada, el sitio puede destacar problemas y contextos de compra: IA, arbitraje,
+            litigacion penal, regulacion corporativa o fiscalidad internacional.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <article class="showcase-card">
+            <span>Escaparate 01</span>
+            <h3>Arbitraje, comercio global y solucion de controversias</h3>
+            <p>Una seleccion para firmas, asesoria internacional y docencia avanzada.</p>
+          </article>
+          <article class="showcase-card">
+            <span>Escaparate 02</span>
+            <h3>IA, privacidad y nueva regulacion tecnologica</h3>
+            <p>Textos para compliance digital, datos personales y responsabilidad automatizada.</p>
+          </article>
+          <article class="showcase-card">
+            <span>Escaparate 03</span>
+            <h3>Prueba penal, investigacion y estrategia procesal</h3>
+            <p>Una mesa de trabajo orientada al litigio y la practica judicial.</p>
+          </article>
+          <article class="showcase-card">
+            <span>Escaparate 04</span>
+            <h3>Fiscalidad corporativa y reorganizacion empresarial</h3>
+            <p>Consulta util para equipos fiscales, estudios y direcciones financieras.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section section-anchor" id="servicios">
       <div class="shell">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Servicios</p>
-            <h2>La web no solo muestra libros: organiza la decision de compra.</h2>
+            <h2>La web queda lista para crecer desde catalogo editorial hacia tienda real.</h2>
           </div>
           <p class="section-intro">
-            Se priorizaron recorridos utiles para una libreria juridica real: descubrimiento, seleccion guiada y pedido rapido sin ruido visual.
+            Ya no es solo una landing: ahora hay estructura de tienda. El siguiente paso es conectar datos reales del negocio.
           </p>
         </div>
 
         <div class="service-grid">
           <article class="service-card">
-            <p class="service-index">01</p>
-            <h3>Pedidos por area de practica</h3>
-            <p>La navegacion separa el catalogo segun necesidades reales de estudio, docencia, litigio y cumplimiento.</p>
+            <span>01</span>
+            <h3>Busqueda y filtro comercial</h3>
+            <p>Permite navegar por materia, titulo, autor y editorial sin depender todavia de un backend complejo.</p>
           </article>
           <article class="service-card">
-            <p class="service-index">02</p>
-            <h3>Solicitud consolidada</h3>
-            <p>Los titulos elegidos se convierten en un pedido base listo para enviar, sin inventar un backend inexistente.</p>
+            <span>02</span>
+            <h3>Pedido consolidado</h3>
+            <p>La seleccion se convierte en una lista util para cotizacion, reserva o seguimiento interno.</p>
           </article>
           <article class="service-card">
-            <p class="service-index">03</p>
-            <h3>Escala para venta real</h3>
-            <p>La estructura permite sumar luego precios, stock, cuenta de cliente, checkout y administracion de inventario.</p>
+            <span>03</span>
+            <h3>Compatible con Hostinger</h3>
+            <p>La raiz del repo se adapta a Vite para que Hostinger la detecte como proyecto valido al importar.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section editorial-section">
-      <div class="shell editorial-layout">
-        <div class="editorial-lead">
-          <p class="eyebrow">Direccion visual</p>
-          <h2>Autoridad juridica con sensibilidad editorial.</h2>
+    <section class="contact-section section-anchor" id="contacto">
+      <div class="shell contact-card">
+        <div>
+          <p class="eyebrow eyebrow-light">Siguiente paso</p>
+          <h2>Lleva esta base a produccion con datos reales, stock y medios de contacto.</h2>
           <p>
-            El sitio evita la estetica generica de una landing comun: no usa gradientes de moda, no depende de tarjetas apiladas sin criterio
-            y no sacrifica legibilidad para parecer moderna.
+            La estructura visual ya esta alineada con una libreria juridica seria. Solo falta conectar informacion real:
+            telefonos, correo, precios finales, medios de pago, envios y checkout cuando lo decidas.
           </p>
         </div>
 
-        <div class="editorial-cards">
+        <div class="contact-points">
           <article>
-            <span>Tipografia</span>
-            <h3>EB Garamond + Lato</h3>
-            <p>Serif con autoridad para titulares y una sans clara para navegacion, fichas y acciones.</p>
+            <span>Deploy</span>
+            <strong>Hostinger podra detectar Vite desde la raiz del repo</strong>
           </article>
           <article>
-            <span>Paleta</span>
-            <h3>Navy, dorado y papel</h3>
-            <p>Una mezcla confiable para derecho, con calor editorial suficiente para hablar de libros y no de banca.</p>
+            <span>Salida</span>
+            <strong>Build estatica lista para `dist/`</strong>
           </article>
           <article>
-            <span>Comportamiento</span>
-            <h3>Interaccion medida</h3>
-            <p>Filtros claros, foco visible, botones con respuesta directa y soporte para usuarios con reduced motion.</p>
+            <span>Escala</span>
+            <strong>Catalogo, pedido, carrito y ecommerce real</strong>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-anchor" id="contacto">
-      <div class="shell">
-        <div class="contact-card">
-          <div>
-            <p class="eyebrow">Contacto y siguiente paso</p>
-            <h2>La base ya esta lista para cargar inventario real y datos oficiales del negocio.</h2>
-            <p>
-              El siguiente nivel natural es conectar esta interfaz a informacion verdadera: precios, existencias, metodos de contacto,
-              pasarela de pago o gestion interna de pedidos.
-            </p>
-          </div>
-
-          <div class="contact-points">
-            <div>
-              <span>Ideal para</span>
-              <strong>Despachos, bibliotecas, docentes y compra institucional</strong>
-            </div>
-            <div>
-              <span>Canales sugeridos</span>
-              <strong>Correo, WhatsApp, formulario y retiro coordinado</strong>
-            </div>
-            <div>
-              <span>Estado actual</span>
-              <strong>Frontend terminado y listo para integraciones</strong>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -425,7 +336,7 @@
   <footer class="site-footer">
     <div class="shell site-footer-inner">
       <p>Libreria Juridica Internacional</p>
-      <p>Diseno editorial para catalogo juridico y venta especializada.</p>
+      <p>Tienda juridica con direccion editorial, tienda y catalogo de muestra.</p>
     </div>
   </footer>
 </body>
